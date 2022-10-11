@@ -1,0 +1,13 @@
+<div *ngFor="let drink of drinks">
+    <br>
+    <label for="">{{drink.name}}</label>
+    <br>
+    <img src="{{drink.img}}" alt="">
+    <br>
+    <ng-container *ngFor="let ingredient of drink.ingredients">
+        <br>
+        <label for="">{{ingredient}}</label>
+    </ng-container>
+    
+    
+</div>

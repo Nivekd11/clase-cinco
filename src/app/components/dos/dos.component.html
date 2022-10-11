@@ -1,0 +1,10 @@
+<form *ngIf="infoService.data$ | async as info">
+    <label for="">name:</label>
+    <input type="text" [value]="info.name">
+    <label for="">Password:</label>
+    <input type="text" name="" id="" [value]="info.password">
+</form>
+<ng-container *ngIf="detector$ | async">
+
+</ng-container>
+
